@@ -1,0 +1,149 @@
+main#edit_profile_main {
+    margin: auto;
+    width: 60%;
+    font-family: Arial, sans-serif;
+}
+
+main#edit_profile_main > h1, h2 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+section#update_profile > section#user_picture{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+section#update_profile > section#user_details{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+section#update_profile label:not(:is(.choose_profile_picture, #updateProfileLabel)) {
+    display: block;
+    margin-top: 6px;
+}
+
+section#update_profile input[type="text"] {
+    display: block;
+    margin-top: 4px;
+}
+
+section#update_profile > section#shipping{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section#update_profile p {
+    font-weight: bold;
+}
+
+section#update_profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#update_profile label#updateProfileLabel {
+    display: block;
+    margin-top: 10px;
+}
+
+section#update_profile textarea, section#update_profile input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+section#update_profile textarea {
+    resize: none;
+    font-size: 16px;
+    height: 6em;
+}
+
+form#edit_profile button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.7em;
+}
+
+section#edit {
+    background-color: white;
+}
+
+#updateProfileButton{
+    margin:auto;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+#updateProfileLabel {
+    display: block;
+}
+
+#updateProfileLabel input[type='text']{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+#fileInput{
+    display: none;
+}
+
+.choose_profile_picture{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #C0C0C0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (min-width: 861px) {
+    section#update_profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    section#user_picture {
+        grid-column: 1 / span 2;
+    }
+
+    section#user_details {
+        margin-right: 1%;
+    }
+
+    section#shipping {
+        margin-left: 1%;
+    }
+}

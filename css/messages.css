@@ -1,0 +1,195 @@
+#newPrice_PopUp {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#NP_PopUpContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#message_area {
+    margin: auto;
+    width: 60%;
+}
+
+.chat_area{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#messages_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#messages_header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#messages_header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+section#item_info {
+    background-color: #B0882F;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+#item_info img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#message_item_details {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#message_item_top span:not(:empty) ~ span:not(:empty)::before,
+#message_item_bottom span:not(:empty) ~ span:not(:empty)::before {
+    content: " - ";
+}
+
+#PNPBtn, #message_buy_item{
+    width: 80%;
+}
+
+#message_buy_item{
+    background-color: #333;
+}
+
+#Message_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+    max-height: 600px;
+    overflow-y: auto;
+}
+/*Hide Scrollbar*/
+#Message_list::-webkit-scrollbar {
+    display: none;
+}
+
+#Message_list li {
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#Message_list li.sender {
+    border-radius: 10px 0 10px 10px;
+    background-color: #f0f0f0;
+    color: black;
+    align-self: flex-end;
+}
+
+#Message_list li.receiver {
+    border-radius: 0 10px 10px 10px;
+    background-color: #d0d0d0;
+    color: black;
+    align-self: flex-start;
+}
+
+#send_message_box {
+    display: flex;
+    margin-top: 10px;
+}
+
+#Accept_Btn, #Reject_Btn {
+    color: white;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    width: 65px;
+}
+
+#Accept_Btn {
+    background-color: #28a745;
+}
+
+#Reject_Btn {
+    background-color: #dc3545;
+}
+
+#message_box {
+    flex-grow: 1;
+    padding: 5px;
+    margin: 0 5px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#sendMessage {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin: 0px 5px 10px 0px;
+    padding: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+#sendMessage i {
+    font-size: 16px;
+}
+
+@media (max-width: 860px) {
+    #Message_list {
+        max-height: 500px;
+    }
+}

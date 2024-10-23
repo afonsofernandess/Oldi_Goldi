@@ -1,0 +1,252 @@
+
+section#main_page{
+    background-color: lightgray;
+}
+#Start_buying h1 {
+    margin-top: 0;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+}
+
+
+#Wlist h1 {
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+
+#Start_buying {
+    position: relative; 
+}
+
+
+#Start_buying img {
+    width: 80%;
+    height: 400px;
+    border-radius: 5px; 
+    display: block; 
+    padding-left: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#Start_buying a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: darkgoldenrod; 
+    color: white; 
+    text-decoration: none; 
+    position: absolute; 
+    bottom: 20px; 
+    left: 60px; 
+    border-radius: 5px; 
+}
+
+#Start_buying a:hover {
+    background-color: #333; 
+}
+
+#Shop_by_brand {
+    h1 {
+        padding-left: 1em;
+        font-size: 1.5em;
+    }
+    ul {
+    list-style-type: none; 
+    padding-left: 1em; 
+    }
+
+    li {
+        display: inline-block;
+        flex-wrap: wrap;
+        margin: 10px; 
+
+        a {
+            display: inline-block; 
+            padding: 10px 20px; 
+            background-color: #333; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+        }
+    }
+}
+
+#Popular_categories{
+    h1 {
+        padding-left: 1em;
+        font-size: 1.5em;
+    }
+
+    h2 {
+        padding-left: 1.5em;
+
+        a {
+            text-decoration: none; 
+            color: black; 
+        }
+    }
+}
+
+
+
+#articles {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#articles article{
+    flex: 1 0 15%; 
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        padding-left: 0.5em;
+    }
+}
+
+#articles article img {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#Garticles {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 10px; 
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#Garticles article{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 5px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    p {
+        padding-left: 0.5em;
+    }
+}
+
+#Garticles article img {
+    width: 100%;
+
+}
+
+section.article-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: auto;
+;
+
+   
+}
+
+section.article-info p {
+    margin: 0;
+    padding: 5px 0;
+    i {
+        float: right;
+        font-size: 2em;
+        margin-right: 0.3em;
+    }
+}
+
+section.article-info p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+section.article-info * {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+#General_articles {
+    h1 {
+        padding-left: 1.5em;
+        font-size: 1.5em;
+    }
+}
+
+/* */
+#Popular_users {
+    h1 {
+        padding-left: 1.5em;
+        font-size: 1.5em;
+    }
+}
+
+#U_info {
+    display: flex;
+
+    img {
+    border-radius: 50%; 
+    width: 70px; 
+    height: 70px; 
+    object-fit: cover;
+    padding-left: 1.5em;
+    }
+    
+    p{
+        padding-left: 1em;
+        padding-top: 0.5em;
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    
+}
+#U_info a:last-child{
+    align-self: center;
+        margin-left: auto;
+        border: 1px solid lightblue;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #007BFF;
+        height: 1em;
+        padding: 10px;
+        margin-right: 2em;
+}
+#U_info p:first-child {
+    margin-bottom: 0.5em;
+}
+#U_info p:last-child{
+    margin-top: 0;
+    font-size: small;
+    i {
+        color: darkgoldenrod;
+    }
+
+    span.R {
+        padding-left: 0.5em;
+    }
+}
+
+article#More {
+    background-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+    }    
+}

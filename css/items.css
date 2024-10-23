@@ -1,0 +1,156 @@
+/* General styling */
+section.heading {
+    display: flex;
+    position:sticky;
+    top: 0;
+    align-items: center;
+    z-index: 1000;
+    background-color: white;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    h1 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    
+}
+div#action_buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+div#action_buttons p:first-child {
+    margin-right: 2em;
+}
+section.items {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    aside {
+        grid-column: 1;
+    }
+    section#Item_for_sell{
+        grid-column: 2;
+    }
+    h1 {
+        padding-left: 1em;
+    }
+}
+
+section.items{
+    background-color: lightgrey;
+}
+
+aside {
+    border-right: 1px solid white;
+    padding-left: 2em;
+    padding-right: 2em;
+    i {
+        float: right;
+        padding-right: 1em;
+    }
+}
+
+#Filters label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Filters input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+    
+}
+#Filters input[type="number"] {
+    width: 30px;
+    height: 20px;
+    margin-right: 0.5em;
+    
+}
+summary {
+    list-style-type: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid white ;
+    font-weight: 700;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
+section#sizeSection{
+    display: flex;
+    flex-direction: column;
+}
+
+section#sizeSection label:last-child{
+    
+    margin-bottom: 1em;
+}
+section#brandSection label:last-child{
+    
+    margin-bottom: 1em;
+}
+section#ConditionSection label:last-child{
+    
+    margin-bottom: 1em;
+}
+
+section#CategorySection label:last-child{
+    
+    margin-bottom: 1em;
+}
+section#brandSection{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#dropdownContainer {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -100px;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#search-term-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    margin-bottom: 1em;
+}
+
+#search-term {
+    margin-right: 10px;
+}
+
+#remove-search-term i{
+    color: red;
+    cursor: pointer;
+    padding-right: 0;
+   
+}
+#search_filter {
+    display: none;
+}

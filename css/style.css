@@ -1,0 +1,326 @@
+/* style.css */
+
+/* Header styles for common.php */
+/* Header styles for common.php as a shopping nav bar */
+body > header section#main_nav_bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+}
+
+body > header section#main_nav_bar form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+form select {
+    max-width: 200px;
+    height: 2em;
+    border: 0px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    border-right: solid 1px black;  
+    margin-left: 1em;
+}
+
+form input {
+    height: 2em;
+    border: 0px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 0 1em;
+}
+
+form button {
+    height: 2em;
+    border: 0px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 1em;
+    margin-right: 0;
+}
+
+body > header section#main_nav_bar h1 {
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+body > header section#main_nav_bar a img {
+    margin-right: 1em;
+}
+
+#signup a:first-child {
+    padding-right: 1em;
+}
+
+#signup a:last-child {
+    padding-left: 0.5em;
+}
+
+body > header section#main_nav_bar #signup {
+    padding-right: 1.5em;
+    margin-left: auto;
+}
+
+body > header section#main_nav_bar #signup a {
+    text-decoration: none;
+    color: white;
+}
+
+#Category_filters {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#Category_filters li {
+    list-style-type: none;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Category_filters a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+body > header > form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#loged_in {
+    padding-right: 1em;
+    margin-left: auto;
+}
+
+#loged_in i {
+    font-size: small;
+    background-color: darkgrey;
+    padding: 0.8em;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-right: 1em;
+    color: #333;
+    margin-left: 1em;
+}
+
+#loged_in #Sell_now {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 0.6em;
+    border-right: solid 2px white;
+}
+
+#loged_in #logout {
+    font-size: 14px;
+    padding-left: 0.5em;
+}
+
+#loged_in a {
+    text-decoration: none;
+    color: white;
+}
+
+form a p i {
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+    color: white;
+    margin-right: 1em;
+}
+
+#signup a:first-child {
+    padding-right: 0.7em;
+    border-right: solid 1px white;
+}
+.icon-links{
+    display: flex;
+    align-items: center;
+}
+
+.icon-links a {
+    padding: 0 10px;
+    color: white;
+    
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#Category_filters {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger + label {
+    display: block;
+    background-color: #2a2f33;
+    color: white;
+    padding: 1em;
+}
+
+#hamburger + label:before {
+    content: '\2630';
+}
+
+#hamburger:checked + label:before {
+    content: '\2715';
+}
+
+
+.searchbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+body > header section#main_nav_bar #searchResult {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1;
+    display: none;
+}
+
+body > header section#main_nav_bar #searchResult li {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+body > header section#main_nav_bar #searchResult li a{
+    text-decoration: none;
+    color: #333;
+}
+
+body > header section#main_nav_bar #searchResult li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+body > header section#main_nav_bar #searchResult li:last-child {
+    border-bottom: none;
+}
+
+/*Hide Scrollbar*/
+#searchResult::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 860px) {
+    form input, form select, form button {
+        margin-top: 10px;
+    }
+
+    body > header section#main_nav_bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body > header section#main_nav_bar form {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon-links a {
+        margin: 5px; /* Add spacing between icons */
+    }
+
+    #signup {
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Category_filters {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    #loged_in {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #hamburger:checked ~ #Category_filters {
+        display: flex;
+    }
+}
+@media (min-width: 861px) {
+    #hamburger,
+    #hamburger + label {
+        display: none;
+    }
+    #Category_filters {
+        display: flex !important;
+    }
+}
